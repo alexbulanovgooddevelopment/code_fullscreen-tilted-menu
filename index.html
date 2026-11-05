@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fullscreen Tilted Menu — полноэкранное меню с диагональным раскрытием и превью разделов при наведении на GSAP."
+    />
+    <title>Fullscreen Tilted Menu</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="preload"
+      href="images/image-05.webp"
+      as="image"
+      type="image/webp"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <a href="#">Void Construct</a>
+      </div>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        <span class="toggle-open">Menu</span>
+        <span class="toggle-close">Close</span>
+      </button>
+
+      <div class="menu" id="menu" inert>
+        <div class="menu-content">
+          <div class="menu-body">
+            <div class="menu-preview">
+              <img class="menu-img" src="images/image-01.webp" alt="" />
+            </div>
+
+            <div class="menu-links">
+              <nav aria-label="Main menu">
+                <ul class="nav-list" role="list">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link"
+                      href="#"
+                      data-img="images/image-01.webp"
+                    >
+                      Visions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link"
+                      href="#"
+                      data-img="images/image-02.webp"
+                    >
+                      Core
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link"
+                      href="#"
+                      data-img="images/image-03.webp"
+                    >
+                      Signals
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link link"
+                      href="#"
+                      data-img="images/image-04.webp"
+                    >
+                      Connect
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+              <nav aria-label="Social links">
+                <ul class="social-list" role="list">
+                  <li class="social-item">
+                    <a class="social-link link" href="#">Behance</a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link link" href="#">Dribbble</a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link link" href="#">LinkedIn</a>
+                  </li>
+                  <li class="social-item">
+                    <a class="social-link link" href="#">Instagram</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="menu-footer">
+            <a class="link" href="#">Run Sequence</a>
+            <div class="menu-footer-links">
+              <a class="link" href="#">Origin</a>
+              <a class="link" href="#">Join Signal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="hero-title">
+          Digital architecture that rises from the void.
+        </h1>
+      </section>
+    </main>
+  </body>
+</html>
